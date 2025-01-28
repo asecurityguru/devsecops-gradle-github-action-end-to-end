@@ -38,6 +38,6 @@ sonarqube {
   properties {
     property 'sonar.host.url', 'https://sonarcloud.io'
     property 'sonar.organization', 'dotnetgithubactionsorg'
-    property 'sonar.projectKey', 'dotnetgithubactionsproject'
+    property 'sonar.projectKey', 'dotnetgithubactionsorg_awqer'
   }
 }
