@@ -40,7 +40,7 @@ jobs:
       - name: Grant execute permission for Gradle Wrapper
         run: chmod +x ./gradlew
       - name: Build and analyze
-        run: ./gradlew build jacocoTestReport sonarqube --info
+        run: ./gradlew wrapper --gradle-version 7.3 build jacocoTestReport sonarqube --info
         env:
           # Needed to get some information about the pull request, if any
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
